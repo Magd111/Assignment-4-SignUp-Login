@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+    <div id="windowSignup" class="container my-5 text-center  d-flex justify-content-center  d-none">
+        <div class="bg-secondary w-75 p-5 shadow-lg rounded">
+            <h1>Smart Sign Up System</h1>
+
+            <div class="input-field">
+                <input id="signupName" oninput="nameTest(this.value)" class="form-control my-3" type="text" name="username"  placeholder="Enter your name">
+            </div>
+            
+            <p id="nameError" class="text-danger d-none"> Add uppercase letters or lowercase letters, so that the minimum is 3 letters, and you can add numbers.</p>
+            <p id="nameExisting" class="text-danger d-none">This name already exists</p>
+
+            <div class="input-field">            
+            <input id="signupEmail" oninput="EmailTest(this.value)" class="form-control my-3" placeholder="Enter your email" type="text">
+            </div>
+            <p id="emailError" class="text-danger d-none">contact@example.com</p>
+            <p id="emailExisting" class="text-danger d-none">This email already exists</p>
+
+            <div class="password-container input-field">
+                <input id="signupPassword" oninput="passwordTest(this.value)" class="form-control my-3" placeholder="Enter your password" type="password">
+                <span class="toggle-visibility" id="toggle-visibility"  >👁️</span>
+            </div>
+            <p id="passwordError" class="text-danger d-none">At least 8 letters (upper and lower case), numbers and symbols</p>
+
+            <button id="signup" class="btn btn-outline-info w-100 my-3">Sign Up</button>
+            <p class="text-white">Don’t have an account? <a class='text-white' id="goToSignin">Login</a></p>
+        </div>
+    </div>
+
+    <div id="windowSignin" class="container my-5 text-center d-flex justify-content-center ">
+        <div class="bg-secondary w-75 p-5 shadow-lg rounded">
+            <h1>Smart Login System</h1>
+            <div class="input-field">
+                <input id="signinEmail" class="form-control my-3" placeholder="Enter your email" type="text">
+            </div>
+            
+            <div class="password-container input-field">
+            <input id="signinPassword" class="form-control my-3" placeholder="Enter your password" type="password">
+            <span class="toggle-visibility" id="toggle-visibility2">👁️</span>
+            </div>
+
+            <p id="incorrect" class="text-danger d-none">incorrect email or password</p>
+            <p id="empty-fields" class="text-danger d-none">Fill in the fields</p>
+
+            <button id="login" class="btn btn-outline-info w-100 my-3">Login</button>
+            <p class="text-white">Don’t have an account? <a class='text-white' id="goToSignup">Sign Up</a></p>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

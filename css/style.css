@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&family=Saira+Condensed:wght@300;400;500;600;700;800&display=swap");
+
+body {
+  font-family: "PT Sans Caption", sans-serif;
+}
+h1{
+  font-family: "Pacifico", cursive;
+
+}
+.password-container{
+  position: relative;
+}
+.password-container .toggle-visibility {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+}
+
+a{
+  cursor: pointer;
+}
